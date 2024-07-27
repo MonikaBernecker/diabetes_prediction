@@ -1,0 +1,95 @@
+Auswertung der Diabetes-Vorhersage
+
+Einleitung
+In diesem Projekt wurde ein Machine-Learning-Modell zur Vorhersage von Diabetes entwickelt und optimiert. Verschiedene Algorithmen wurden getestet und ihre Leistungen verglichen, um das beste Modell für die Vorhersage zu identifizieren. Die Daten wurden sorgfältig vorverarbeitet und mehrere Modelle wurden trainiert, evaluiert und optimiert.
+
+Datenvorverarbeitung
+Die Daten wurden aus einer CSV-Datei geladen und wie folgt vorverarbeitet:
+
+Fehlende Werte wurden behandelt.
+Numerische Merkmale wurden normalisiert.
+Die Daten wurden in Trainings- und Testdatensätze aufgeteilt.
+Modelltraining und -bewertung
+Zwei Hauptmodelle wurden verwendet: Logistische Regression und Random Forest. Beide Modelle wurden evaluiert und die Ergebnisse wurden verglichen.
+
+Logistische Regression
+Die Logistische Regression wurde als Basismodell trainiert und bewertet. Die Ergebnisse sind wie folgt:
+
+Genauigkeit: 0.7597
+
+Klassifikationsbericht:
+
+Klasse 0:
+Präzision: 0.80
+Recall: 0.83
+F1-Score: 0.82
+Klasse 1:
+Präzision: 0.67
+Recall: 0.64
+F1-Score: 0.65
+Feature Importance:
+
+Glucose: 1.0315
+BMI_Category: 0.7185
+BMI: 0.4185
+Age_Group: 0.3342
+DiabetesPedigreeFunction: 0.2178
+Age: 0.2059
+Glucose_Category: 0.2048
+Insulin: 0.1899
+BloodPressure: 0.1879
+BMI_Age_Interaction: 0.1534
+Pregnancies: 0.1403
+Log_Insulin: 0.0765
+SkinThickness: 0.0549
+Random Forest
+Das Random-Forest-Modell wurde ebenfalls trainiert und bewertet. Die Ergebnisse sind wie folgt:
+
+Genauigkeit: 0.7532
+
+Klassifikationsbericht:
+
+Klasse 0:
+Präzision: 0.81
+Recall: 0.80
+F1-Score: 0.81
+Klasse 1:
+Präzision: 0.65
+Recall: 0.67
+F1-Score: 0.66
+Feature Importance:
+
+Glucose: 0.1944
+BMI: 0.1155
+Age: 0.1034
+DiabetesPedigreeFunction: 0.0901
+BMI_Age_Interaction: 0.0884
+Glucose_Category: 0.0768
+BloodPressure: 0.0665
+Pregnancies: 0.0546
+SkinThickness: 0.0539
+Log_Insulin: 0.0467
+Insulin: 0.0443
+Age_Group: 0.0341
+BMI_Category: 0.0312
+Hyperparameter-Tuning
+Zur Verbesserung der Leistung des Random-Forest-Modells wurde ein Hyperparameter-Tuning mit GridSearchCV durchgeführt. Die besten Parameter wurden wie folgt ermittelt:
+
+Beste Parameter: {'max_depth': 10, 'min_samples_split': 5, 'n_estimators': 100}
+Beste Kreuzvalidierungsgenauigkeit: 0.7818
+Das optimierte Random-Forest-Modell erzielte folgende Ergebnisse auf dem Testdatensatz:
+
+Genauigkeit: 0.7662
+Optimierter Klassifikationsbericht:
+
+Klasse 0:
+Präzision: 0.84
+Recall: 0.79
+F1-Score: 0.81
+Klasse 1:
+Präzision: 0.66
+Recall: 0.73
+F1-Score: 0.69
+
+Schlussfolgerung
+Die Modelle zur Vorhersage von Diabetes zeigen solide Leistungen, insbesondere das optimierte Random-Forest-Modell, das eine höhere Genauigkeit und bessere Metriken im Vergleich zur Logistischen Regression aufweist. Die wichtigsten Merkmale für die Vorhersage sind Glucose, BMI und Alter.
