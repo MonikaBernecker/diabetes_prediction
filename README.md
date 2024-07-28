@@ -19,7 +19,7 @@ Die Daten sind unter der [CC0: Public Domain](https://creativecommons.org/public
 ## Installation
 
 1. Klonen Sie das Repository:
-   git clone https://github.com/IhrBenutzername/IhrRepositoryName.git
+   git clone https://github.com/MonikaBernecker/IhrRepositoryName.git
 
 2. Navigieren Sie in das Verzeichnis:
    cd IhrRepositoryName
